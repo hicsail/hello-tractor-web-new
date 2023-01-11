@@ -7,7 +7,7 @@ const colors = {
 };
 const fontStyles = {
   avenirBold: {
-    fontFamily: "AvenirLTStd",
+    fontFamily: "AvenirLTStdBold",
     fontWeight: 1000,
     fontSize: "14px",
     lineHeight: "16.8px",
