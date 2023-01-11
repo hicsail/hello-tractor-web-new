@@ -28,4 +28,11 @@ const fontStyles = {
     color: colors.black,
   },
 };
-export { colors, fontStyles };
+const componentStyles = {
+  cardGreyBackground: {
+    backgroundColor: colors.grey,
+    borderRadius: "12px",
+    padding: "7px 11px",
+  },
+};
+export { colors, fontStyles, componentStyles };

@@ -7,6 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import { colors, fontStyles } from "./styles/styles";
+import TokenValueHistoryChart from "./components/TokenValueHistoryChart";
 const RooneySans = require("./assets/fonts/RooneySans-Regular.woff2");
 const AvenirLTStd = require("./assets/fonts/AvenirLTPro55Roman.woff2");
 const AvenirLTStdBold = require("./assets/fonts/AvenirLT95Black.ttf");
@@ -65,7 +66,8 @@ function App() {
         >
           Dashboard
         </Typography>
-        <TokenCard />
+        {/* <TokenCard /> */}
+        <TokenValueHistoryChart />
       </Stack>
     </ThemeProvider>
   );
