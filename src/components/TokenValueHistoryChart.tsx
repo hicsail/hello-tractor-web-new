@@ -10,7 +10,11 @@ import {
   ResponsiveContainer,
   Label,
 } from "recharts";
-import { colors, componentStyles } from "../styles/styles";
+import { colors, componentStyles, fontStyles } from "../styles/styles";
+import TokenChartSelector from "./molecules/TokenChartSelector";
+import TokenDropDown from "./molecules/TokenDropDown";
+
+import TokenGainOrLossView from "./molecules/TokenGainOrLossView";
 
 export interface Props {}
 
@@ -87,10 +91,21 @@ const TokenValueHistoryChart: React.FC<Props> = (props) => {
       style={{
         ...componentStyles.cardGreyBackground,
         width: "700px",
-        height: "385px",
-        justifyContent: "space-between",
+        height: "395px",
       }}
     >
+      <Stack
+        style={{
+          flexDirection: "row",
+          justifyContent: "space-between",
+          alignItems: "center",
+          margin: "10px 30px",
+        }}
+      >
+        <TokenDropDown />
+        <TokenChartSelector />
+        <TokenGainOrLossView />
+      </Stack>
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart
           width={500}

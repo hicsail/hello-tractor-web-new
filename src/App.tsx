@@ -8,6 +8,9 @@ import {
 } from "@mui/material";
 import { colors, fontStyles } from "./styles/styles";
 import TokenValueHistoryChart from "./components/TokenValueHistoryChart";
+import TokenGainOrLossView from "./components/molecules/TokenGainOrLossView";
+import TokenChartSelector from "./components/molecules/TokenChartSelector";
+import TokenDropDown from "./components/molecules/TokenDropDown";
 const RooneySans = require("./assets/fonts/RooneySans-Regular.woff2");
 const AvenirLTStd = require("./assets/fonts/AvenirLTPro55Roman.woff2");
 const AvenirLTStdBold = require("./assets/fonts/AvenirLT95Black.ttf");
@@ -58,6 +61,7 @@ function App() {
       <Stack
         style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
       >
+        <TokenDropDown />
         <Typography
           style={{
             ...fontStyles.rooneyBold,
@@ -66,7 +70,7 @@ function App() {
         >
           Dashboard
         </Typography>
-        {/* <TokenCard /> */}
+
         <TokenValueHistoryChart />
       </Stack>
     </ThemeProvider>
