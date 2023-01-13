@@ -1,10 +1,8 @@
 import { Stack, Typography } from "@mui/material";
-import { margin } from "@mui/system";
-import React, { PureComponent } from "react";
+import { PureComponent } from "react";
 import {
   ComposedChart,
   Line,
-  Area,
   Bar,
   XAxis,
   YAxis,
@@ -12,7 +10,6 @@ import {
   Tooltip,
   Legend,
   ResponsiveContainer,
-  Label,
 } from "recharts";
 import { fontStyles } from "../styles/styles";
 
@@ -56,9 +53,6 @@ const data = [
 ];
 
 export default class BookingsAndServicesHistoryChart extends PureComponent {
-  static demoUrl =
-    "https://codesandbox.io/s/composed-chart-with-axis-label-55s1s";
-
   render() {
     return (
       <Stack

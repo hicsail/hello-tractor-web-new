@@ -12,6 +12,7 @@ import TokenGainOrLossView from "./components/molecules/TokenGainOrLossView";
 import TokenChartSelector from "./components/molecules/TokenChartSelector";
 import TokenDropDown from "./components/molecules/TokenDropDown";
 import BookingsAndServicesHistoryChart from "./components/BookingsAndServicesHistoryChart";
+import BookingsAndServicesMap from "./components/BookingsAndServicesMap";
 const RooneySans = require("./assets/fonts/RooneySans-Regular.woff2");
 const AvenirLTStd = require("./assets/fonts/AvenirLTPro55Roman.woff2");
 const AvenirLTStdBold = require("./assets/fonts/AvenirLT95Black.ttf");
@@ -70,8 +71,7 @@ function App() {
         >
           Dashboard
         </Typography>
-        <BookingsAndServicesHistoryChart />
-        <TokenValueHistoryChart />
+        <BookingsAndServicesMap />
       </Stack>
     </ThemeProvider>
   );
