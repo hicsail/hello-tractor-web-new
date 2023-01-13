@@ -11,7 +11,7 @@ const fontStyles = {
     fontWeight: 1000,
     fontSize: "14px",
     lineHeight: "16.8px",
-    color: colors.primary,
+    color: colors.black,
   },
   avenirRegular: {
     fontFamily: "AvenirLTStd",
