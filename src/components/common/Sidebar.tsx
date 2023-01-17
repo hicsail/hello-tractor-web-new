@@ -1,11 +1,4 @@
-import {
-  Avatar,
-  Drawer,
-  List,
-  Stack,
-  Toolbar,
-  Typography,
-} from "@mui/material";
+import { Drawer, List, Stack, Toolbar } from "@mui/material";
 import appRoutes from "../../routes/appRoutes";
 import { sizes } from "../../styles/styles";
 import SidebarItem from "./SidebarItem";
@@ -22,9 +15,6 @@ const Sidebar = () => {
           width: sizes.sideBarWidth,
           boxSizing: "border-box",
           borderRight: "0px",
-
-          //   backgroundColor: colorConfigs.sidebar.bg,
-          //   color: colorConfigs.sidebar.color
         },
       }}
     >

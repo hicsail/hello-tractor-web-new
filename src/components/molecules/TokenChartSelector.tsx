@@ -1,5 +1,5 @@
 import { Stack, Typography } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 import { fontStyles, colors } from "../../styles/styles";
 
 import LeftArrowButton from "../../assets/svgs/leftArrowButton.svg";

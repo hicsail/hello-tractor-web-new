@@ -1,11 +1,11 @@
 import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
 import { ReactNode } from "react";
 import MainDashboard from "../pages/MainDashboard";
-import DashboardIcon from "../assets/svgs/dashboardIcon.svg";
 import LeaderBoardIcon from "../assets/svgs/leaderBoardIcon.svg";
 import SupportIcon from "../assets/svgs/supportIcon.svg";
 import UserProfileIcon from "../assets/svgs/userProfileIcon.svg";
 import ReportsAndHistoryIcon from "../assets/svgs/reportsAndHistoryIcon.svg";
+import DashboardIcon from "../assets/svgs/dashboardIcon.svg";
 
 export type RouteType = {
   element: ReactNode;
@@ -13,7 +13,7 @@ export type RouteType = {
   index?: boolean;
   path?: string;
   child?: RouteType[];
-  sidebarProps?: {
+  sidebarProps: {
     displayText: string;
     icon?: ReactNode;
   };
@@ -36,7 +36,7 @@ const appRoutes: RouteType[] = [
     state: "market-portfolio",
     sidebarProps: {
       displayText: "Market Portfolio",
-      icon: <img src={DashboardIcon} alt="logo SVG" />,
+      icon: <FileDownloadOutlinedIcon />,
     },
   },
   {

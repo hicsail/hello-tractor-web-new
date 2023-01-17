@@ -7,7 +7,6 @@ export interface Props {}
 const MainDashboard: React.FC<Props> = (props) => {
   return (
     <>
-      {" "}
       <BookingsAndServicesMap />
       <TokenValueHistoryChart />
     </>
