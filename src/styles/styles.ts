@@ -35,4 +35,7 @@ const componentStyles = {
     padding: "7px 11px",
   },
 };
-export { colors, fontStyles, componentStyles };
+const sizes = {
+  sideBarWidth: "300px",
+};
+export { colors, fontStyles, componentStyles, sizes };

@@ -13,6 +13,9 @@ import TokenChartSelector from "./components/molecules/TokenChartSelector";
 import TokenDropDown from "./components/molecules/TokenDropDown";
 import BookingsAndServicesHistoryChart from "./components/BookingsAndServicesHistoryChart";
 import BookingsAndServicesMap from "./components/BookingsAndServicesMap";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainLayout from "./components/layout/MainLayout";
+import { routes } from "./routes";
 const RooneySans = require("./assets/fonts/RooneySans-Regular.woff2");
 const AvenirLTStd = require("./assets/fonts/AvenirLTPro55Roman.woff2");
 const AvenirLTStdBold = require("./assets/fonts/AvenirLT95Black.ttf");
@@ -60,7 +63,14 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Stack
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainLayout />}>
+            {routes}
+          </Route>
+        </Routes>
+      </BrowserRouter>
+      {/* <Stack
         style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
       >
         <Typography
@@ -72,7 +82,7 @@ function App() {
           Dashboard
         </Typography>
         <BookingsAndServicesMap />
-      </Stack>
+      </Stack> */}
     </ThemeProvider>
   );
 }
